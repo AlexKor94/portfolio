@@ -10,4 +10,9 @@ closeElem.addEventListener('click', () => {
   menu.classList.remove('active');
 });
 
-const counters = document.querySelectorAll('.skills__raiting-counter');
+const counters = document.querySelectorAll('.skills__raiting-counter'),
+  lines = document.querySelectorAll('.skills__raiting-line span');
+
+counters.forEach((item, i) => {
+  lines[i].style.width = item.innerHTML;
+});
