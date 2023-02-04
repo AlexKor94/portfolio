@@ -23,7 +23,9 @@
       top: 4px;
       left: -10px;
     }
-
+    &-cost {
+      justify-self: end;
+    }
     &-descr {
       grid-column: 1 / 3;
       font-size: 12px;
