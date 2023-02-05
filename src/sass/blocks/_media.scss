@@ -90,6 +90,13 @@
     &__wrapper {
       grid-template: repeat(3, minmax(231px, auto)) / repeat(3, 231px);
     }
+    &__raiting {
+      grid-template: repeat(2, minmax(70px, auto))/repeat(2, 315px);
+      justify-content: space-between;
+      &-line {
+        width: 315px;
+      }
+    }
   }
 }
 
@@ -158,6 +165,15 @@
     &__wrapper {
       grid-template: repeat(2, minmax(231px, auto)) / repeat(2, 231px);
       justify-content: center;
+    }
+    &__raiting {
+      margin-top: 40px;
+      grid-template: repeat(2, minmax(70px, auto)) / 1fr;
+      gap: unset;
+      row-gap: 40px;
+      &-line {
+        width: 100%;
+      }
     }
   }
 }
