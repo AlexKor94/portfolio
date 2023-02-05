@@ -46,6 +46,13 @@
       width: 231px;
       min-height: 231px;
     }
+
+    &__raiting {
+      grid-template: repeat(2, minmax(70px, auto))/repeat(3, 290px);
+      &-line {
+        width: 290px;
+      }
+    }
   }
 }
 
