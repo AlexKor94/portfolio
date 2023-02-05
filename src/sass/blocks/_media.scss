@@ -30,7 +30,7 @@
     &__wrapper {
       padding: 60px 40px 0 40px;
       grid-template-columns: repeat(2, 380px);
-       column-gap: 120px;
+      column-gap: 120px;
     }
   }
 }
@@ -58,6 +58,13 @@
       }
     }
   }
+  .resume {
+    &__wrapper {
+      padding: 60px 20px 0 20px;
+      grid-template-columns: repeat(2, 300px);
+      column-gap: 80px;
+    }
+  }
 }
 
 @media (max-width: 768px) {
@@ -69,6 +76,11 @@
       font-size: 28px; 
     }
   }
+
+  .divider {
+    margin-top: 15px;
+  }
+
   .promo {
     &__title {
       line-height: 39px;
@@ -91,6 +103,28 @@
       }
     }
   }
+
+  .resume {
+    &__wrapper {
+      padding: 0;
+      padding-top: 10px;
+      grid-template-columns: 520px;
+      row-gap: 40px;
+      grid-auto-rows: auto;
+    }
+    &__item {
+      &:before {
+        top: 54px;
+      }
+      &-icon {
+        top: 34px;
+        left: 45px;
+      }
+      &-head {
+        padding: 29px 0 0 100px;
+      }
+    }
+  } 
 }
 
 @media (max-width: 576px) {
