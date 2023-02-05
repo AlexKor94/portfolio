@@ -54,6 +54,14 @@
       }
     }
   }
+  .portfolio {
+    &__wrapper {
+      .vertical, .horizonal {
+        grid-row: unset;
+        grid-column: unset;
+      }
+    }
+  }
 }
 
 @media (max-width: 992px) {
