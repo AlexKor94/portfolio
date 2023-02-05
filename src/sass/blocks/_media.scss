@@ -110,6 +110,17 @@
       }
     }
   }
+  .price {
+    &__wrapper {
+      grid-template-columns: repeat(auto-fit, 350px);
+      padding: 20px 0 0 0;
+    }
+    &__item {
+      &:before {
+          left: -3px;
+        }
+    }
+  }
 }
 
 @media (max-width: 768px) {
@@ -191,6 +202,14 @@
   .portfolio {
     padding-top: 40px;
   }
+
+  .price {
+    padding-top: 40px;
+    &__wrapper {
+      margin-top: 20px;
+      justify-content: center;
+    }
+  }
 }
 
 @media (max-width: 576px) {
@@ -248,5 +267,10 @@
     width: 270px;
     min-height: 270px;
    }
+  }
+  .price {
+    &__wrapper {
+      grid-template-columns: repeat(auto-fit, 295px);
+    }
   }
 }
