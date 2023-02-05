@@ -26,6 +26,13 @@
       }
     }
   }
+  .resume {
+    &__wrapper {
+      padding: 60px 40px 0 40px;
+      grid-template-columns: repeat(2, 380px);
+       column-gap: 120px;
+    }
+  }
 }
 
 @media (max-width: 992px) {
